@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Naans weather API!</title>
+</head>
+<body>
+<div class="container p-3">
+<div class="container card m-3">
+  <br>
+<h1>welcome to Naan's Weather API!</h1>
+
+<form action="/loc" method="POST">
+  <div class="form-group ">
+    <label for="InputLocation">Enter Desired Location</label>
+    <input required type="text" class="form-control" id="InputLocation" name="location" aria-describedby="LocationHelp" placeholder="Enter Location">
+    <small id="LocationHelp" class="form-text text-muted">We'll never share your Location with anyone else. (i'm lying)</small>
+  </div>
+<button id="script" type="submit" class="btn btn-primary">Submit</button>
+</form>
+<button id=btn1 style="display:none" type="button" onclick="location.href = '/doron'" class="btn btn-outline-primary m-3">Go See Doron!</button>
+  <br>
+</div>
+</div>
+</body>

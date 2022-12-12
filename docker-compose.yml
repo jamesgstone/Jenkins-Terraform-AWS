@@ -1,0 +1,17 @@
+version: "3.9"
+services:   
+  app:
+    build: ./prj 
+    container_name: weather_app-server1
+    image: "pr1"
+  app1:
+    image: "pr1"
+    container_name: weather_app-server2
+  nginx: 
+    build: ./nginx
+    image: "nginx_srv"
+    container_name: nginx-server
+    ports: 
+      - "80:80"
+
+

@@ -1,0 +1,14 @@
+import json
+
+f =  {
+     "title": "any title",
+     "age": 20 ,
+     "color": "random color"
+     }
+
+
+y = json.loads(f)
+
+f.age = 30
+
+print(f)
